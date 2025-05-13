@@ -33,9 +33,5 @@ form.addEventListener('submit', (e)=>{
 })
 
 restartBtn.addEventListener('click',() => {
-    cnt = 0;
-    noOfGuesses.innerHTML = `No. of Guesses: 0`;
-    higherLower.innerHTML = ``;
-    over.innerHTML = ``;
-    inputBox.value = ``;
+    window.location.reload()
 })
