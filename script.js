@@ -18,6 +18,7 @@ form.addEventListener('submit', (e)=>{
             over.innerHTML = `Your number is ${guessedNum} You guessed the answer in ${cnt} guesses`;
             noOfGuesses.innerHTML = `No. of Guesses: ${cnt}`;
             inputBox.value = ``;
+            inputBox.setAttribute('disabled','true');
         }
         else if(guessedNum < randNum){
             higherLower.innerHTML = `Guess Higher`;
